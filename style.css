@@ -1,0 +1,50 @@
+.header {
+  margin: 25px 0;
+}
+
+.btn {
+  width: 120px;
+}
+
+.btn-delete {
+  position: absolute;
+  margin-top: -7px;
+  right: 11.1rem;
+}
+
+
+/* Анимации - Удаление задачи*/
+.drop-task {
+	animation: drop-task 0.6s linear forwards;
+}
+
+@keyframes drop-task {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  80% {
+    transform: translate(100px, 0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(100px, -40px);
+    opacity: 0;
+  }
+}
+
+/* Анимации - Добавление задачи*/
+.apply-task {
+	animation: apply-task 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) forwards;
+}
+
+@keyframes apply-task {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
